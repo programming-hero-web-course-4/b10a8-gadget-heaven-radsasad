@@ -17,6 +17,57 @@
       "rating": 4.8
     },
     {
+      "product_id": 14,
+      "product_title": "Dell Inspiron 15 3520",
+      "product_image": "https://i.ibb.co.com/xfQJPFN/15.webp",
+      "category": "Laptops",
+      "price": 1499.99,
+      "description": "Gaming laptop with a powerful graphics card and fast processor.",
+      "specification": [
+        "Intel Core i7 Processor",
+        "16GB RAM",
+        "512GB SSD",
+        "NVIDIA GeForce GTX 1650",
+        "14.6-inch Full HD display"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 15,
+      "product_title": "Infinix INBOOK Y2 Plus ",
+      "product_image": "https://i.ibb.co.com/74vn5hK/16.webp",
+      "category": "Laptops",
+      "price": 1299.99,
+      "description": "High-performance gaming laptop with a powerful graphics card and fast processor.",
+      "specification": [
+        "Intel Core i7 Processor",
+        "16GB RAM",
+        "512GB SSD",
+        "NVIDIA GeForce GTX 1650",
+        "15.6-inch Full HD display"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 16,
+      "product_title": "MSI Modern 14 C12MO",
+      "product_image": "https://i.ibb.co.com/TqNGBrq/17.webp",
+      "category": "Laptops",
+      "price": 1299.99,
+      "description": "High-performance gaming laptop with a powerful graphics card and fast processor.",
+      "specification": [
+        "Intel Core i7 Processor",
+        "16GB RAM",
+        "512GB SSD",
+        "NVIDIA GeForce GTX 1650",
+        "15.6-inch Full HD display"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
       "product_id": 2,
       "product_title": "HP Laptop",
       "product_image": "https://i.ibb.co.com/kDHYsqs/2.webp",
@@ -140,7 +191,7 @@
       "product_title": "Portable Charger",
       "product_image": "https://i.ibb.co.com/kGXyDQh/13.webp",
       "category": "Accessories",
-      "price": 29.99,
+      "price": 54.99,
       "description": "High-capacity portable charger, perfect for charging devices on the go.",
       "specification": [
         "10000mAh battery",
@@ -157,7 +208,7 @@
       "product_title": "Laptop Stand",
       "product_image": "https://i.ibb.co.com/8jD6B6H/12.webp",
       "category": "Accessories",
-      "price": 39.99,
+      "price": 69.99,
       "description": "Ergonomic laptop stand to improve posture and reduce neck strain.",
       "specification": [
         "Adjustable height",

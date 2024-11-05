@@ -6,20 +6,20 @@ import { BsCart } from "react-icons/bs";
 const Menu = () => {
     const navBar = <>
         <NavLink
-            className={({ isActive }) => ` ${isActive ? 'text-white underline' : 'hover:text-zinc-200 text-white'}`}
+            className={({ isActive }) => ` ${isActive ? 'text-zinc-600 underline' : 'hover:text-zinc-500 text-zinc-600'}`}
             to='/'>Home</NavLink>
         <NavLink
-            className={({ isActive }) => ` ${isActive ? 'text-white underline' : 'hover:text-zinc-200 text-white'}`}
+            className={({ isActive }) => ` ${isActive ? 'text-zinc-600 underline' : 'hover:text-zinc-500 text-zinc-600'}`}
             to='/statistics'>Statistics</NavLink>
         <NavLink
-            className={({ isActive }) => ` ${isActive ? 'text-white underline' : 'hover:text-zinc-200 text-white'}`}
+            className={({ isActive }) => ` ${isActive ? 'text-zinc-600 underline' : 'hover:text-zinc-500 text-zinc-600'}`}
             to='/dashboard'>Dashboard</NavLink>
     </>
     const logo = <>
-        <Link to='/' className="text-xl font-bold text-white">Gadget Heaven</Link>
+        <Link to='/' className="text-xl font-bold text-zinc-700">Gadget Heaven</Link>
     </>
     return (
-        <div className="px-10 navbar">
+        <div className="px-10 mt-6 navbar">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,19 +44,23 @@ const Menu = () => {
             </div>
             <div className="hidden navbar-center lg:flex">
                 <ul className="gap-10 px-1 text-base uppercase menu menu-horizontal">
-                    {navBar} 
+                    {navBar}
                 </ul>
             </div>
             <div className="gap-5 navbar-end">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="p-2 font-bold text-purple-700 bg-white border rounded-full"><BsCart /></div>
+                    <div tabIndex={0} role="button" className="relative p-2 font-bold text-purple-700 bg-white border rounded-full"><BsCart />
+                        <p className='absolute w-6 h-6 px-2 py-1 ml-3 -mt-8 text-xs text-red-500 border rounded-full bg-slate-50'>0</p>
+                    </div>
                     <ul tabIndex={0} className="dropdown-content -ml-48 mt-2 menu bg-base-100 rounded-xl z-[1] w-60 p-2  shadow">
                         <li><a>Item 1</a></li>
                         <li><a>Item 2</a></li>
                     </ul>
                 </div>
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="p-2 font-bold text-purple-700 bg-white border rounded-full"><LuHeart /></div>
+                    <div tabIndex={0} role="button" className="relative p-2 font-bold text-purple-700 bg-white border rounded-full"><LuHeart />
+                        <p className='absolute w-6 h-6 px-2 py-1 ml-3 -mt-8 text-xs text-red-500 border rounded-full bg-slate-50'>0</p>
+                    </div>
                     <ul tabIndex={0} className="dropdown-content -ml-48 mt-2 menu bg-base-100 rounded-xl z-[1] w-60 p-2  shadow">
                         <li><a>Item 1</a></li>
                         <li><a>Item 2</a></li>
