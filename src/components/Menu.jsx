@@ -3,8 +3,21 @@ import { Link, NavLink } from 'react-router-dom';
 import { LuHeart } from "react-icons/lu";
 import { BsCart } from "react-icons/bs";
 
-const Menu = ({ navBar, logo }) => {
-
+const Menu = () => {
+    const navBar = <>
+        <NavLink
+            className={({ isActive }) => ` ${isActive ? 'text-white underline' : 'hover:text-zinc-200 text-white'}`}
+            to='/'>Home</NavLink>
+        <NavLink
+            className={({ isActive }) => ` ${isActive ? 'text-white underline' : 'hover:text-zinc-200 text-white'}`}
+            to='/statistics'>Statistics</NavLink>
+        <NavLink
+            className={({ isActive }) => ` ${isActive ? 'text-white underline' : 'hover:text-zinc-200 text-white'}`}
+            to='/dashboard'>Dashboard</NavLink>
+    </>
+    const logo = <>
+        <Link to='/' className="text-xl font-bold text-white">Gadget Heaven</Link>
+    </>
     return (
         <div className="px-10 navbar">
             <div className="navbar-start">

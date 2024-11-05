@@ -1,16 +1,20 @@
 
 import PropTypes from 'prop-types';
+import Menu from '../components/Menu';
 
-const Statistics = props => {
+const Statistics = () => {
+
     return (
         <div>
-            <h1>Statistics</h1>
+            <div>
+                <Menu></Menu>
+            </div>
         </div>
     );
 };
 
 Statistics.propTypes = {
-    
+
 };
 
 export default Statistics;

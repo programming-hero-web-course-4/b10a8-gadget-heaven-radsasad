@@ -1,0 +1,225 @@
+[
+    {
+      "product_id": 1,
+      "product_title": "Dell Laptop",
+      "product_image": "https://i.ibb.co.com/1vrfChF/hp-15-fc0166au-amd-ryzen-5-7520u-8gb-ddr5-512gb-51726116875.webp",
+      "category": "Laptops",
+      "price": 1299.99,
+      "description": "High-performance gaming laptop with a powerful graphics card and fast processor.",
+      "specification": [
+        "Intel Core i7 Processor",
+        "16GB RAM",
+        "512GB SSD",
+        "NVIDIA GeForce GTX 1650",
+        "15.6-inch Full HD display"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 2,
+      "product_title": "HP Laptop",
+      "product_image": "https://i.ibb.co.com/kDHYsqs/2.webp",
+      "category": "Laptops",
+      "price": 899.99,
+      "description": "Slim and lightweight laptop, ideal for professionals on the go.",
+      "specification": [
+        "Intel Core i5 Processor",
+        "8GB RAM",
+        "256GB SSD",
+        "13.3-inch Full HD display",
+        "Battery life up to 12 hours"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 3,
+      "product_title": "Asus rog Laptop",
+      "product_image": "https://i.ibb.co.com/hdXgpQw/3.webp",
+      "category": "Laptops",
+      "price": 499.99,
+      "description": "Affordable laptop with all essentials for students and everyday use.",
+      "specification": [
+        "Intel Core i3 Processor",
+        "4GB RAM",
+        "128GB SSD",
+        "14-inch HD display",
+        "Lightweight design"
+      ],
+      "availability": true,
+      "rating": 4.2
+    },
+    {
+      "product_id": 4,
+      "product_title": "Iphone 16 pro max",
+      "product_image": "https://i.ibb.co.com/L9khjMB/4.webp",
+      "category": "Phones",
+      "price": 799.99,
+      "description": "High-end smartphone with stunning display and excellent camera quality.",
+      "specification": [
+        "6.5-inch OLED display",
+        "Triple camera setup",
+        "128GB storage",
+        "5G compatible",
+        "Fast charging"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 5,
+      "product_title": "IPhone 15 pro",
+      "product_image": "https://i.ibb.co.com/xScQK9N/5.webp",
+      "category": "Phones",
+      "price": 199.99,
+      "description": "Affordable smartphone with all essential features.",
+      "specification": [
+        "6.1-inch LCD display",
+        "Single rear camera",
+        "64GB storage",
+        "4G compatible",
+        "Long battery life"
+      ],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "product_id": 6,
+      "product_title": "Samsung s24 ultra",
+      "product_image": "https://i.ibb.co.com/Gsd5S8n/6.webp",
+      "category": "Phones",
+      "price": 1499.99,
+      "description": "Innovative foldable smartphone with a large flexible display.",
+      "specification": [
+        "7.3-inch foldable display",
+        "Dual rear camera",
+        "256GB storage",
+        "5G compatible",
+        "High durability hinge"
+      ],
+      "availability": false,
+      "rating": 4.7
+    },
+    {
+      "product_id": 7,
+      "product_title": "Samsung Z Fold 4",
+      "product_image": "https://i.ibb.co.com/rQpFH6Q/7.png",
+      "category": "Phones",
+      "price": 299.99,
+      "description": "Compact smartphone with powerful features in a small form factor.",
+      "specification": [
+        "5.4-inch OLED display",
+        "Dual rear camera",
+        "128GB storage",
+        "5G compatible",
+        "Water-resistant"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": 8,
+      "product_title": "EarFun Air Mini 2 ",
+      "product_image": "https://i.ibb.co.com/cYyQ7LX/14.webp",
+      "category": "Accessories",
+      "price": 59.99,
+      "description": "Compact wireless earbuds with high-quality sound and long battery life.",
+      "specification": [
+        "Bluetooth 5.0",
+        "Water-resistant",
+        "20 hours battery life",
+        "Noise cancellation",
+        "Built-in microphone"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 9,
+      "product_title": "Portable Charger",
+      "product_image": "https://i.ibb.co.com/kGXyDQh/13.webp",
+      "category": "Accessories",
+      "price": 29.99,
+      "description": "High-capacity portable charger, perfect for charging devices on the go.",
+      "specification": [
+        "10000mAh battery",
+        "Fast charging",
+        "Dual USB output",
+        "Compact design",
+        "LED indicator"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 10,
+      "product_title": "Laptop Stand",
+      "product_image": "https://i.ibb.co.com/8jD6B6H/12.webp",
+      "category": "Accessories",
+      "price": 39.99,
+      "description": "Ergonomic laptop stand to improve posture and reduce neck strain.",
+      "specification": [
+        "Adjustable height",
+        "Aluminum build",
+        "Anti-slip base",
+        "Compatible with all laptops",
+        "Foldable design"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 11,
+      "product_title": "Black Shark GT3 Neo ENC",
+      "product_image": "https://i.ibb.co.com/KbhK371/10.webp",
+      "category": "Smart Watches",
+      "price": 129.99,
+      "description": "Smart watch with fitness tracking features and heart rate monitor.",
+      "specification": [
+        "Heart rate monitor",
+        "Sleep tracking",
+        "Water-resistant",
+        "GPS",
+        "Battery life up to 7 days"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 12,
+      "product_title": "T900 Ultra 2 Smart Watch",
+      "product_image": "https://i.ibb.co.com/VHFd1Xx/8.webp",
+      "category": "Smart Watches",
+      "price": 499.99,
+      "description": "Stylish smart watch with advanced health monitoring and connectivity.",
+      "specification": [
+        "ECG monitoring",
+        "Blood oxygen level",
+        "Water-resistant",
+        "Stainless steel frame",
+        "AMOLED display"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 13,
+      "product_title": "COLMI P73 Bluetooth Calling Smart Watch",
+      "product_image": "https://i.ibb.co.com/rFCfbWn/9.webp",
+      "category": "Smart Watches",
+      "price": 79.99,
+      "description": "Affordable smart watch with essential health tracking features.",
+      "specification": [
+        "Step counter",
+        "Heart rate monitor",
+        "Water-resistant",
+        "Battery life up to 10 days",
+        "Basic notifications"
+      ],
+      "availability": true,
+      "rating": 4.3
+    }
+    
+  ]
+  
