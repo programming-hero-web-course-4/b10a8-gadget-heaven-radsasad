@@ -52,19 +52,13 @@ const Menu = () => {
                     <div tabIndex={0} role="button" className="relative p-2 font-bold text-purple-700 bg-white border rounded-full"><BsCart />
                         <p className='absolute w-6 h-6 px-2 py-1 ml-3 -mt-8 text-xs text-red-500 border rounded-full bg-slate-50'>0</p>
                     </div>
-                    <ul tabIndex={0} className="dropdown-content -ml-48 mt-2 menu bg-base-100 rounded-xl z-[1] w-60 p-2  shadow">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                    </ul>
+                   
                 </div>
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="relative p-2 font-bold text-purple-700 bg-white border rounded-full"><LuHeart />
                         <p className='absolute w-6 h-6 px-2 py-1 ml-3 -mt-8 text-xs text-red-500 border rounded-full bg-slate-50'>0</p>
                     </div>
-                    <ul tabIndex={0} className="dropdown-content -ml-48 mt-2 menu bg-base-100 rounded-xl z-[1] w-60 p-2  shadow">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                    </ul>
+                    
                 </div>
             </div>
         </div>

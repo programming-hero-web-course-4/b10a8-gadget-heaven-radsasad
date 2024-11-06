@@ -1,7 +1,7 @@
 
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-import {  useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import { getStoredCartList, getStoredWishList } from '../utility/addToDb';
 
 import AddCartContainer from '../components/AddCartContainer';
@@ -12,7 +12,9 @@ import { toast } from 'react-toastify';
 const DashBoard = () => {
     const [cartList, setCartList] = useState([])
     const [sort, setSort] = useState('')
-   
+
+    const [amount , setAmount] = useState(0);
+    console.log(amount)
     const allProducts = useLoaderData()
     useEffect(() => {
         const storedCartList = getStoredCartList();
@@ -21,6 +23,11 @@ const DashBoard = () => {
         const addCartList = allProducts.filter(cart => storedCartListInt.includes(cart.product_id));
         setCartList(addCartList)
 
+        const totalAmount = addCartList.reduce((accumulator, transaction) => {
+            return accumulator + transaction.price;
+           
+        }, 0);
+        setAmount(totalAmount)
     }, [])
 
     const [wishList, setWishList] = useState([])
@@ -52,21 +59,20 @@ const DashBoard = () => {
     const handleSort = sortType => {
         setSort(sortType);
         if (sortType === 'price') {
-            const storedCartList = [...cartList].sort((a, b) => b.price -a.price);
+            const storedCartList = [...cartList].sort((a, b) => b.price - a.price);
             setCartList(storedCartList)
         }
     }
     const handleDelete = (id) => {
-        const remainingProducts = cartList.filter((product=> product.product_id != id));
+        const remainingProducts = cartList.filter((product => product.product_id != id));
         setCartList(remainingProducts)
         toast.success(" successfully delete your product  !", {
             position: "top-center"
-          });
+        });
 
     }
 
-   
-    
+
     return (
         <div>
 
@@ -83,7 +89,7 @@ const DashBoard = () => {
                 </div>
             </div>
             {
-                isActive.cart ? <AddCartContainer  handleSort={handleSort} cartList={cartList} handleDelete={handleDelete}></AddCartContainer> : <ShoppingList wishList={wishList}></ShoppingList>
+                isActive.cart ? <AddCartContainer amount={amount}   handleSort={handleSort} cartList={cartList} handleDelete={handleDelete}></AddCartContainer> : <ShoppingList wishList={wishList}></ShoppingList>
             }
 
 
