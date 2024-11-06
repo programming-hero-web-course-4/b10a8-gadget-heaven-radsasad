@@ -8,6 +8,7 @@ import ErrorPage from "../components/ErrorPage";
 import ProductDetails from "../components/ProductDetails";
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -45,7 +46,8 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <DashBoard></DashBoard>,
-        loader: ()=> fetch('/products.json')   
+        loader: ()=> fetch('/products.json'),
+        
       }    
     ]
   },

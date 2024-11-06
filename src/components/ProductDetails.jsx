@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { CiCircleChevRight } from "react-icons/ci";
 import { IoIosHeartEmpty } from "react-icons/io";
-import { addToStoredCartList } from '../utility/addToDb';
+import { addToStoredCartList, addToStoredWishList } from '../utility/addToDb';
 
 const ProductDetails = () => {
     const { productId } = useParams();
@@ -12,6 +12,9 @@ const ProductDetails = () => {
     const { product_image, product_title, price, availability, description, specification, rating } = product || {};
     const handleAddToCart = (id) => {
         addToStoredCartList(id)
+    }
+    const handleWishList = (id) => {
+        addToStoredWishList(id)
     }
     return (
         <div className=''>
@@ -57,7 +60,7 @@ const ProductDetails = () => {
 
                             <div className='flex gap-5 mt-5'>
                                 <button onClick={() => handleAddToCart(productId)} className="px-3 py-1 text-white bg-violet-600 hover:bg-violet-800 rounded-3xl">Add to cart</button>
-                                <button className='px-2 py-1 border rounded-full hover:bg-violet-100 hover:text-zinc-600 border-violet-200'><IoIosHeartEmpty /></button>
+                                <button onClick={()=> handleWishList(productId)} className='px-2 py-1 border rounded-full hover:bg-violet-100 hover:text-zinc-600 border-violet-200'><IoIosHeartEmpty /></button>
                             </div>
                         </div>
                     </div>

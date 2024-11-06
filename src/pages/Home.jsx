@@ -8,9 +8,7 @@ import { useEffect } from 'react';
 
 const Home = () => {
     const categories = useLoaderData()
-    useEffect(()=>{
-        document.title = ' Gadget Heaven | home '
-    },[])
+    
 
     return (
         <div className='m-auto mb-10 max-w-7xl'>

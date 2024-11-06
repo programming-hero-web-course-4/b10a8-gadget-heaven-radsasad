@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import { IoMdClose } from "react-icons/io";
-
-const AddCartList = ({ cart }) => {
-    const { product_id, product_title, product_image, price, description } = cart;
+const WishList = ({wish}) => {
+    const { product_id, product_title, product_image, price, description } = wish;
     return (
         <div className="rounded-md bg-zinc-100">
             <div className="flex items-center justify-between px-2 py-1 ">
@@ -10,10 +9,9 @@ const AddCartList = ({ cart }) => {
                     <img src={product_image} className="h-24 max-w-sm rounded-lg" />
                     <div>
                         <h1 className="text-xl font-semibold text-zinc-500">{product_title}</h1>
-                        <p className="py-1 text-zinc-400">
+                        <p className="py-6 text-zinc-400">
                             {description}
                         </p>
-                        <p className='text-zinc-500'>price ${price}</p>
                     </div>
                 </div>
                 <div>
@@ -24,8 +22,8 @@ const AddCartList = ({ cart }) => {
     );
 };
 
-AddCartList.propTypes = {
-
+WishList.propTypes = {
+    
 };
 
-export default AddCartList;
+export default WishList;
