@@ -6,6 +6,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { addToStoredCartList, addToStoredWishList } from '../utility/addToDb';
 
 const ProductDetails = () => {
+   
     const { productId } = useParams();
     const data = useLoaderData()
     const product = data.find(product => product.product_id === parseInt(productId))

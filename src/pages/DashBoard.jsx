@@ -1,15 +1,18 @@
 
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-import { NavLink, Outlet, useLoaderData } from 'react-router-dom';
+import {  useLoaderData } from 'react-router-dom';
 import { getStoredCartList, getStoredWishList } from '../utility/addToDb';
-import AddCartList from '../components/AddCartList';
+
 import AddCartContainer from '../components/AddCartContainer';
 import ShoppingList from '../components/ShoppingList';
+import { toast } from 'react-toastify';
 
 
 const DashBoard = () => {
     const [cartList, setCartList] = useState([])
+    const [sort, setSort] = useState('')
+   
     const allProducts = useLoaderData()
     useEffect(() => {
         const storedCartList = getStoredCartList();
@@ -20,13 +23,13 @@ const DashBoard = () => {
 
     }, [])
 
-    const [wishList , setWishList] =useState([])
-    useEffect(()=>{
+    const [wishList, setWishList] = useState([])
+    useEffect(() => {
         const storedWishList = getStoredWishList();
         const storedWistListInt = storedWishList.map(id => parseInt(id));
         const addWishList = allProducts.filter(wish => storedWistListInt.includes(wish.product_id));
         setWishList(addWishList)
-    },[])
+    }, [])
 
     const [isActive, setIsActive] = useState({
         cart: true,
@@ -39,13 +42,30 @@ const DashBoard = () => {
                 status: 'cart'
             })
         }
-        else{
+        else {
             setIsActive({
                 cart: false,
                 status: 'wishlist'
             })
         }
     }
+    const handleSort = sortType => {
+        setSort(sortType);
+        if (sortType === 'price') {
+            const storedCartList = [...cartList].sort((a, b) => b.price -a.price);
+            setCartList(storedCartList)
+        }
+    }
+    const handleDelete = (id) => {
+        const remainingProducts = cartList.filter((product=> product.product_id != id));
+        setCartList(remainingProducts)
+        toast.success(" successfully delete your product  !", {
+            position: "top-center"
+          });
+
+    }
+
+   
     
     return (
         <div>
@@ -56,17 +76,17 @@ const DashBoard = () => {
                     <p className='mt-5 text-zinc-200'>Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
                 </div>
                 <div className='flex items-center justify-center gap-3 mt-7'>
-                    <button onClick={()=> handleIsActiveStatus('cart')} 
-                    className={`${isActive.cart? "px-10 py-1 mt-2 font-semibold text-purple-700 border bg-white border-violet-300 rounded-2xl" : "px-10 py-1 mt-2 font-semibold text-white border border-white  rounded-2xl"}`}>Cart</button>
-                    <button onClick={()=> handleIsActiveStatus('wish;ist')} 
-                    className={`${isActive.cart? "px-10 py-1 mt-2 font-semibold text-white border border-white  rounded-2xl" : "px-10 py-1 mt-2 font-semibold text-purple-700 border bg-white border-violet-300 rounded-2xl"}`}>Wishlist</button>
+                    <button onClick={() => handleIsActiveStatus('cart')}
+                        className={`${isActive.cart ? "px-10 py-1 mt-2 font-semibold text-purple-700 border bg-white border-violet-300 rounded-2xl" : "px-10 py-1 mt-2 font-semibold text-white border border-white  rounded-2xl"}`}>Cart</button>
+                    <button onClick={() => handleIsActiveStatus('wish;ist')}
+                        className={`${isActive.cart ? "px-10 py-1 mt-2 font-semibold text-white border border-white  rounded-2xl" : "px-10 py-1 mt-2 font-semibold text-purple-700 border bg-white border-violet-300 rounded-2xl"}`}>Wishlist</button>
                 </div>
             </div>
             {
-                isActive.cart? <AddCartContainer cartList={cartList}></AddCartContainer> : <ShoppingList wishList={wishList}></ShoppingList>
+                isActive.cart ? <AddCartContainer  handleSort={handleSort} cartList={cartList} handleDelete={handleDelete}></AddCartContainer> : <ShoppingList wishList={wishList}></ShoppingList>
             }
-            
-            
+
+
         </div>
     );
 };

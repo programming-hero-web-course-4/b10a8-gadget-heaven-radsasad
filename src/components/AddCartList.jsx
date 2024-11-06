@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { IoMdClose } from "react-icons/io";
 
-const AddCartList = ({ cart }) => {
+const AddCartList = ({ cart , handleDelete }) => {
     const { product_id, product_title, product_image, price, description } = cart;
     return (
         <div className="rounded-md bg-zinc-100">
@@ -17,7 +17,7 @@ const AddCartList = ({ cart }) => {
                     </div>
                 </div>
                 <div>
-                    <button className='w-6 h-6 px-1 text-red-500 bg-white border border-red-400 rounded-full'><IoMdClose /></button>
+                    <button onClick={()=> handleDelete(product_id)} className='w-6 h-6 px-1 text-red-500 bg-white border border-red-400 rounded-full'><IoMdClose /></button>
                 </div>
             </div>
         </div>
