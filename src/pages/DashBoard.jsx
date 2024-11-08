@@ -7,14 +7,15 @@ import { getStoredCartList, getStoredWishList } from '../utility/addToDb';
 import AddCartContainer from '../components/AddCartContainer';
 import ShoppingList from '../components/ShoppingList';
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet';
 
 
 const DashBoard = () => {
     const [cartList, setCartList] = useState([])
     const [sort, setSort] = useState('')
 
-    const [amount , setAmount] = useState(0);
-    console.log(amount)
+    const [amount, setAmount] = useState(0);
+
     const allProducts = useLoaderData()
     useEffect(() => {
         const storedCartList = getStoredCartList();
@@ -25,7 +26,7 @@ const DashBoard = () => {
 
         const totalAmount = addCartList.reduce((accumulator, transaction) => {
             return accumulator + transaction.price;
-           
+
         }, 0);
         setAmount(totalAmount)
     }, [])
@@ -63,19 +64,28 @@ const DashBoard = () => {
             setCartList(storedCartList)
         }
     }
+    const handleDecreasePrice = (id) => {
+        const product = cartList.find((p) => p.product_id == id);
+        setAmount(amount - product.price)
+        // console.log(product)
+    }
     const handleDelete = (id) => {
+        handleDecreasePrice(id)
         const remainingProducts = cartList.filter((product => product.product_id != id));
         setCartList(remainingProducts)
         toast.success(" successfully delete your product  !", {
             position: "top-center"
         });
-
     }
 
 
     return (
         <div>
-
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Dashboard</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className='py-10 bg-purple-500 min-h-[150px]  relative '>
                 <div className='flex flex-col items-center justify-center text-center'>
                     <h1 className='text-4xl font-thin text-white'>Dashboard</h1>
@@ -89,7 +99,7 @@ const DashBoard = () => {
                 </div>
             </div>
             {
-                isActive.cart ? <AddCartContainer amount={amount}   handleSort={handleSort} cartList={cartList} handleDelete={handleDelete}></AddCartContainer> : <ShoppingList wishList={wishList}></ShoppingList>
+                isActive.cart ? <AddCartContainer setWishList={setWishList} setAmount={setAmount} setCartList={setCartList} amount={amount} handleSort={handleSort} cartList={cartList} handleDelete={handleDelete}></AddCartContainer> : <ShoppingList wishList={wishList}></ShoppingList>
             }
 
 

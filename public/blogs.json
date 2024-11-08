@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "title": "The Latest Smartphone Trends in 2024",
+      "description": "Explore the cutting-edge features of the latest smartphones, including foldable displays, advanced cameras, 5G connectivity, and AI-powered capabilities that are changing the mobile industry.",
+      "image": "https://i.ibb.co.com/Bq9MgH0/image.jpg",
+      "author": "Alice Green",
+      "authorImg": "https://i.ibb.co.com/wQbmg60/pexels-photo-1212984.webp",
+      "categoryDescription": [
+        "Exploring the latest smartphone trends in 2024.",
+        "New features in mobile devices, from 5G to AI.",
+        "How foldable and other innovative designs are impacting the industry."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Top Laptops for Professionals in 2024",
+      "description": "A guide to the best laptops for professionals, featuring powerful performance, long battery life, and sleek designs. Whether for work or entertainment, these laptops deliver impressive results.",
+      "image": "https://i.ibb.co.com/sHZBNx6/2.jpg",
+      "author": "Bob White",
+      "authorImg": "https://i.ibb.co.com/bH2QrW8/bb.webp",
+      "categoryDescription": [
+        "Reviews of the best laptops for work and productivity.",
+        "An overview of powerful laptops with great battery life.",
+        "The latest designs and features in professional laptops."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Smartwatches: The Future of Wearable Technology",
+      "description": "Discover how smartwatches are evolving from fitness trackers to all-in-one devices that manage your health, notifications, and even control your home. A closer look at the top smartwatches of the year.",
+      "image": "https://i.ibb.co.com/cX7Lzpt/9.jpg",
+      "author": "Claire Brown",
+      "authorImg": "https://i.ibb.co.com/TwrbWZg/Antobia2.webp",
+      "categoryDescription": [
+        "Insights into the latest smartwatch features for 2024.",
+        "From fitness tracking to health monitoring advancements.",
+        "How smartwatches are becoming all-in-one devices."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Best Budget Smartphones for 2024",
+      "description": "Looking for an affordable smartphone with great features? Check out our list of the best budget-friendly phones that offer impressive performance without breaking the bank.",
+      "image": "https://i.ibb.co.com/6wX627k/110.jpg",
+      "author": "David Clark",
+      "authorImg": "https://i.ibb.co.com/c6X9mMN/pexels-photo-614810.webp",
+      "categoryDescription": [
+        "Affordable smartphones with great features.",
+        "Top budget-friendly phone options in 2024.",
+        "Balancing performance and price in smartphones."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "The Evolution of Laptops: From Heavy Machines ",
+      "description": "Laptops have come a long way. Explore how they've evolved over the years, from bulky machines to ultra-thin, lightweight devices that still pack a punch in terms of performance.",
+      "image": "https://i.ibb.co.com/LC4dfzT/4cf.jpg",
+      "author": "Eva Martin",
+      "authorImg": "https://i.ibb.co.com/4S3TWnv/pexels-photo-624014.jpg",
+      "categoryDescription": [
+        "The evolution of laptop technology over the years.",
+        "Lightweight, ultra-thin designs in modern laptops.",
+        "Performance improvements in today's laptops."
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Smartwatch Features You Didn't Know You Needed",
+      "description": "Smartwatches offer much more than just timekeeping. Learn about the hidden features of modern smartwatches, from ECG monitoring to built-in voice assistants and beyond.",
+      "image": "https://i.ibb.co.com/5nZ1VTf/a.jpg",
+      "author": "Frank Lee",
+      "authorImg": "https://i.ibb.co.com/Qb5SLmX/pexels-photo-7432875.webp",
+      "categoryDescription": [
+        "Unique features in smartwatches beyond fitness tracking.",
+        "Advanced health monitoring options.",
+        "Integrating voice assistants and smart home controls in wearables."
+      ]
+    }
+  ]
+  

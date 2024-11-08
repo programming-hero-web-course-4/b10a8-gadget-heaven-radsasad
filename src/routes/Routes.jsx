@@ -6,6 +6,8 @@ import DashBoard from "../pages/DashBoard";
 import Carts from "../components/Carts";
 import ErrorPage from "../components/ErrorPage";
 import ProductDetails from "../components/ProductDetails";
+import Blogs from "../pages/Blogs";
+import BlogDetails from "../components/BlogDetails";
 
 
 
@@ -48,6 +50,16 @@ const router = createBrowserRouter([
         element: <DashBoard></DashBoard>,
         loader: ()=> fetch('/products.json'),
         
+      },  
+      {
+        path: '/blogs',
+        element: <Blogs></Blogs>,
+        loader: ()=> fetch('/blogs.json')               
+      },
+      {
+        path:'/blog/:blogId',
+        element:<BlogDetails></BlogDetails>,
+        loader: ()=> fetch('/blogs.json')
       }    
     ]
   },
