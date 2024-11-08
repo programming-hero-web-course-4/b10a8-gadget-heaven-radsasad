@@ -1,15 +1,13 @@
 import PropTypes from 'prop-types';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import {  NavLink, useLocation } from 'react-router-dom';
 import { LuHeart } from "react-icons/lu";
 import { BsCart } from "react-icons/bs";
 import { useEffect, useState } from 'react';
 
 
+
 const Menu = () => {
-    const logoStyle = {
-        fontSize: '18px',
-        
-    };
+  
     const location = useLocation();
     const [navLinkStyle, setNavLinkStyle] = useState({ active: 'text-zinc-600 underline', inactive: 'hover:text-zinc-500 text-zinc-600' });
     useEffect(() => {
@@ -56,15 +54,15 @@ const Menu = () => {
                 to='/blogs'>Blogs</NavLink>
         </>
     const logo = <>
-        <NavLink 
+        <NavLink
             className={({ isActive }) =>
-                `${isActive ? navLinkStyle.active  : navLinkStyle.inactive}`
+                `${isActive ? navLinkStyle.active : navLinkStyle.inactive}`
             }
             to='/'><button className='text-2xl'>Gadget Heaven</button></NavLink>
     </>
     return (
         <div className="px-10 mt-6 navbar">
-
+           
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

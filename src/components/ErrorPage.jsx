@@ -13,7 +13,10 @@ const ErrorPage = () => {
             </div>
             <div className="border mockup-window bg-base-300">
 
-                <div className="flex justify-center px-4 py-16 text-4xl font-bold bg-base-200">No data Found</div>
+                <div className="flex flex-col items-center justify-center px-4 py-16 text-4xl font-bold text-center bg-base-200">
+                    <h1 className='text-4xl font-bold'> No data Found</h1>
+                    <p className='mt-5 text-base font-semibold'>Status : 404</p>
+                </div>
             </div>
 
         </div>

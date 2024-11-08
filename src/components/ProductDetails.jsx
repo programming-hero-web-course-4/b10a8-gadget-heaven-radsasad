@@ -36,7 +36,7 @@ const ProductDetails = () => {
             <div className='py-10 bg-purple-500 min-h-[350px]  relative '>
                 <div className='flex flex-col items-center justify-center text-center'>
                     <h1 className='text-4xl font-thin text-white'>Product Details</h1>
-                    <p className='mt-5 text-zinc-200'>Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
+
                 </div>
 
                 <div className="absolute top-[600px] lg:top-[400px] bottom-0 left-0 right-0 min-h-[800px] lg:min-h-[450px] max-w-5xl m-auto bg-white border hero rounded-2xl">

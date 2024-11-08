@@ -13,7 +13,7 @@ const Home = () => {
         <div className='m-auto mb-10 max-w-7xl'>
             <Helmet>
                     <meta charSet="utf-8" />
-                    <title>Gadget Heaven</title>
+                    <title>Gadget Heaven </title>
                     <link rel="canonical" href="http://mysite.com/example" />
                 </Helmet>
             <NavBar></NavBar>

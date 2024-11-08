@@ -11,7 +11,7 @@ const Blogs = () => {
         <div>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Blogs</title>
+                <title>Gadget Heaven | Blogs</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
             <div className='py-10 bg-purple-500 min-h-[150px]  relative '>
